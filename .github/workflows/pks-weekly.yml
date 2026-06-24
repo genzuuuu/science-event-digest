@@ -29,8 +29,11 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_FROM: ${{ secrets.SMTP_FROM }}
         run: |
-          pip install -r requirements.txt
-          python main.py --task pks-weekly --send_email
+        pip install -r requirements.txt
+        python main.py --task pks-weekly --send_email \
+          --api_key "${API_KEY}" \
+          --base_url "${BASE_URL:-https://api.deepseek.com}" \
+          --model "${MODEL:-deepseek-v4-flash}"
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

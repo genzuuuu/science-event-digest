@@ -40,7 +40,10 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             FORCE_FLAG="--force"
           fi
-          python main.py --task conferences-monthly --send_email $FORCE_FLAG
+          python main.py --task conferences-monthly --send_email $FORCE_FLAG \
+            --api_key "${API_KEY}" \
+            --base_url "${BASE_URL:-https://api.deepseek.com}" \
+            --model "${MODEL:-deepseek-v4-flash}"
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
