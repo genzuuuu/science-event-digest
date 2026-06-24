@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ICDCM 2026",
+    "full_title": "36th International Conference on Diamond and Carbon Materials",
+    "when": "August 30 – September 3, 2026",
+    "where": "Donostia-San Sebastián, Spain",
+    "deadline": "2026-08-07",
+    "url": "https://www.elsevier.com/en-gb/events/conferences/all/international-conference-on-diamond-and-carbon-materials",
+    "source": "curated (Elsevier)",
+    "topics": "materials science, carbon materials, diamond"
+  },
+  {
+    "name": "APS March Meeting 2027",
+    "full_title": "American Physical Society March Meeting",
+    "when": "March 2027 (TBA)",
+    "where": "Denver, Colorado, USA",
+    "deadline": "2026-08-01",
+    "url": "https://meetings.aps.org/Meeting/MAR27/APS_epitome",
+    "source": "curated (APS, estimated)",
+    "topics": "physics, condensed matter"
+  },
+  {
+    "name": "DPG Spring Meeting 2027",
+    "full_title": "Deutsche Physikalische Gesellschaft Frühjahrstagung",
+    "when": "March 2027 (TBA)",
+    "where": "Germany",
+    "deadline": "2026-11-15",
+    "url": "https://www.dpg-verhandlungen.de/",
+    "source": "curated (DPG, estimated)",
+    "topics": "physics, condensed matter"
+  }
+]

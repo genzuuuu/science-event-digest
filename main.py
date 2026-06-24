@@ -25,16 +25,21 @@ PKS_PROMPT_ZH = """
 """
 
 CONF_PROMPT_EN = """
-You are curating a monthly digest of global conferences in physics, materials science,
+You are curating a monthly digest of international conferences in physics, materials science,
 and AI / machine learning whose submission deadlines are approaching soon.
-From the list, highlight the most relevant for academic researchers (not predatory meetings).
-For each: conference name, location, conference dates, deadline, why it matters, and markdown link.
-Flag urgent deadlines (within 14 days). Write in English.
+Prioritize major international academic venues (APS, MRS, E-MRS, IEEE, ACM, NeurIPS, ICML,
+ICLR, CVPR, AAAI, ACL, RSS, CoRL, etc.). Deprioritize or omit regional aggregator
+conferences and suspected predatory meetings, especially generic "International Conference on..."
+events in low-signal locations.
+For each selected item: conference name, location, conference dates, deadline, why it matters,
+and a markdown link. Flag urgent deadlines (within 14 days). Write in English.
 """
 
 CONF_PROMPT_ZH = """
-你正在整理全球物理、材料、人工智能/机器学习方向的学术会议导读，重点是投稿截止日期临近的会议。
-从列表中筛选高质量、与学术研究相关的会议（排除疑似掠夺性会议）。
+你正在整理全球物理、材料、人工智能/机器学习方向的学术会议导读，重点是投稿截止日期临近的
+国际性重要会议。优先 APS、MRS、E-MRS、IEEE、ACM、NeurIPS、ICML、ICLR、CVPR、AAAI、ACL、
+RSS、CoRL 等知名会议；略过或少写区域性聚合会议和疑似掠夺性会议，尤其是地点信号较弱、
+题目泛泛的 "International Conference on..." 类会议。
 每项注明会议名称、地点、会期、截止日期、推荐理由和 markdown 链接。
 特别标注 14 天内截止的紧急项。用中文撰写。
 """
@@ -109,7 +114,7 @@ def run_conferences_monthly(api_key, base_url, model, send_email: bool, force: b
         print(f"Today ({today}) is not the last Sunday of the month; skipping.")
         return False
 
-    horizon = 45
+    horizon = 60
     events = fetch_upcoming_conferences(horizon_days=horizon, reference=today)
     if not events:
         print("No upcoming conference deadlines found.")
@@ -127,7 +132,7 @@ def run_conferences_monthly(api_key, base_url, model, send_email: bool, force: b
         f"- **Month:** {month_str}\n"
         f"- **Deadline window:** next {horizon} days\n"
         f"- **Generated:** {now.isoformat()}\n"
-        f"- **Source:** [WikiCFP](https://wikicfp.com)\n"
+        f"- **Sources:** ai-deadlines, curated, WikiCFP (filtered), E-MRS\n"
     )
 
     save_report(f"data/conferences/{month_str}.md", header, summary_en, summary_zh)

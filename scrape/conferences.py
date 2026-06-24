@@ -1,20 +1,16 @@
 import datetime
-import re
 from dataclasses import dataclass
-from html import unescape
-from urllib.parse import urljoin
 
-import requests
+from scrape.sources.ai_deadlines import fetch_ai_deadlines
+from scrape.sources.curated import fetch_curated_conferences
+from scrape.sources.emrs import fetch_emrs_meetings
+from scrape.sources.wikicfp import fetch_wikicfp
 
-WIKICFP_BASE = "http://wikicfp.com"
-USER_AGENT = "science-event-digest/1.0 (+https://github.com/genzuuuu/science-event-digest)"
-
-SEARCH_QUERIES = [
-    "materials science",
-    "condensed matter physics",
-    "machine learning",
-    "artificial intelligence",
-    "computational physics",
+SOURCE_NAMES = [
+    "ai-deadlines (mlciv.com) — top-tier AI/ML/CV/NLP/robotics",
+    "curated — APS/MRS/NeurIPS/ICML/CVPR/ICLR/Elsevier materials (verified)",
+    "WikiCFP — APS/MRS/IEEE/condensed matter (international filter)",
+    "E-MRS (european-mrs.com) — European materials meetings",
 ]
 
 
@@ -26,84 +22,44 @@ class ConferenceEvent:
     where: str
     deadline: datetime.date | None
     url: str
-    source_query: str
+    source: str
+    topics: str = ""
 
 
-def _fetch_wikicfp(query: str) -> str:
-    response = requests.get(
-        f"{WIKICFP_BASE}/cfp/servlet/tool.search",
-        params={"q": query, "year": "f"},
-        headers={"User-Agent": USER_AGENT},
-        timeout=60,
-    )
-    response.raise_for_status()
-    return response.text
-
-
-def _parse_deadline(text: str) -> datetime.date | None:
-    text = text.strip()
-    for fmt in ("%b %d, %Y", "%b %d,%Y", "%d %b %Y"):
-        try:
-            return datetime.datetime.strptime(text, fmt).date()
-        except ValueError:
-            continue
-    return None
-
-
-def _parse_wikicfp_table(html: str, query: str) -> list[ConferenceEvent]:
-    events = []
-    rows = re.findall(
-        r'<tr bgcolor="#(?:f6f6f6|e6e6e6)">(.*?)</tr>\s*<tr bgcolor="#(?:f6f6f6|e6e6e6)">(.*?)</tr>',
-        html,
-        flags=re.S,
-    )
-    for row1, row2 in rows:
-        link_m = re.search(r'<a href="(/cfp/servlet/event\.[^"]+)">([^<]+)</a>', row1)
-        title_m = re.search(r"<td[^>]*>([^<].*?)</td>", row1)
-        when_m = re.search(r"<td align=\"left\">([^<]+)</td>", row2)
-        where_m = re.search(r"<td align=\"left\">([^<]+)</td>", row2[row2.find("</td>") + 5 :])
-        parts = re.findall(r"<td align=\"left\">([^<]+)</td>", row2)
-        if not link_m or len(parts) < 3:
-            continue
-        when, where, deadline_text = parts[0], parts[1], parts[2]
-        events.append(
-            ConferenceEvent(
-                name=unescape(link_m.group(2).strip()),
-                full_title=unescape(title_m.group(1).strip()) if title_m else unescape(link_m.group(2).strip()),
-                when=unescape(when.strip()),
-                where=unescape(where.strip()),
-                deadline=_parse_deadline(deadline_text),
-                url=urljoin(WIKICFP_BASE, link_m.group(1)),
-                source_query=query,
-            )
-        )
-    return events
+def _dedupe_key(event: ConferenceEvent) -> str:
+    return f"{event.name.lower()}|{event.deadline}"
 
 
 def fetch_upcoming_conferences(
-    horizon_days: int = 45,
+    horizon_days: int = 60,
     reference: datetime.date | None = None,
 ) -> list[ConferenceEvent]:
     today = reference or datetime.date.today()
     horizon_end = today + datetime.timedelta(days=horizon_days)
-    seen_urls: set[str] = set()
+    seen: set[str] = set()
     results: list[ConferenceEvent] = []
 
-    for query in SEARCH_QUERIES:
-        try:
-            html = _fetch_wikicfp(query)
-            for event in _parse_wikicfp_table(html, query):
-                if event.url in seen_urls:
-                    continue
-                if not event.deadline:
-                    continue
-                if today <= event.deadline <= horizon_end:
-                    seen_urls.add(event.url)
-                    results.append(event)
-        except Exception as exc:
-            print(f"WikiCFP query failed ({query}): {exc}")
+    fetchers = [
+        ("ai-deadlines", lambda: fetch_ai_deadlines(today, horizon_end)),
+        ("curated", lambda: fetch_curated_conferences(today, horizon_end)),
+        ("wikicfp", lambda: fetch_wikicfp(today, horizon_end)),
+        ("emrs", lambda: fetch_emrs_meetings(today, horizon_end)),
+    ]
 
-    results.sort(key=lambda e: (e.deadline, e.name))
+    for source_name, fetcher in fetchers:
+        try:
+            events = fetcher()
+            print(f"[{source_name}] fetched {len(events)} events")
+            for event in events:
+                key = _dedupe_key(event)
+                if key in seen:
+                    continue
+                seen.add(key)
+                results.append(event)
+        except Exception as exc:
+            print(f"[{source_name}] failed: {exc}")
+
+    results.sort(key=lambda e: (e.deadline or today, e.name))
     return results
 
 
@@ -112,9 +68,17 @@ def format_conferences_for_llm(events: list[ConferenceEvent], today: datetime.da
         f"Conference submission deadlines between {today.isoformat()} and "
         f"{(today + datetime.timedelta(days=horizon_days)).isoformat()}",
         "Topics: physics, materials science, AI / machine learning",
-        "Source: WikiCFP (global listings)",
-        "",
+        "Sources:",
     ]
+    for source in SOURCE_NAMES:
+        lines.append(f"- {source}")
+    lines.append("")
+    lines.append(
+        "Prioritize major international academic venues (APS, MRS, E-MRS, IEEE, ACM, "
+        "NeurIPS, ICML, ICLR, CVPR, AAAI, etc.). Deprioritize regional aggregator conferences."
+    )
+    lines.append("")
+
     for i, event in enumerate(events, 1):
         lines.append(f"### Conference [{i}]")
         lines.append(f"Name: {event.name}")
@@ -123,6 +87,8 @@ def format_conferences_for_llm(events: list[ConferenceEvent], today: datetime.da
         lines.append(f"Conference dates: {event.when}")
         lines.append(f"Location: {event.where}")
         lines.append(f"Submission deadline: {event.deadline.isoformat() if event.deadline else 'unknown'}")
-        lines.append(f"Found via search: {event.source_query}")
+        lines.append(f"Data source: {event.source}")
+        if event.topics:
+            lines.append(f"Topics: {event.topics}")
         lines.append("")
     return "\n".join(lines)
