@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Frontiers of Condensed Matter 2026",
+    "full_title": "Les Houches – WE Heraeus Summer School on Frontiers of Condensed Matter",
+    "when": "September 28 – October 9, 2026",
+    "where": "Les Houches, France",
+    "deadline": "2026-06-15",
+    "session_start": "2026-09-28",
+    "url": "https://frontiers-les-houches.org/",
+    "source": "curated (Les Houches / WE Heraeus)",
+    "topics": "condensed matter, quantum materials, summer school"
+  },
+  {
+    "name": "MLSS 2026 Tübingen",
+    "full_title": "50th Machine Learning Summer School (MLSS 2026)",
+    "when": "August 31 – September 11, 2026",
+    "where": "Tübingen, Germany",
+    "deadline": "2026-07-31",
+    "session_start": "2026-08-31",
+    "url": "https://mlss2026.is.tuebingen.mpg.de/",
+    "source": "curated (MPI-IS Tübingen)",
+    "topics": "machine learning, AI, summer school"
+  },
+  {
+    "name": "Correl26",
+    "full_title": "Autumn School on Correlated Electrons: Correlated Materials — Methods and Applications",
+    "when": "September 21–25, 2026",
+    "where": "Forschungszentrum Jülich, Germany",
+    "deadline": "2026-05-31",
+    "session_start": "2026-09-21",
+    "url": "https://www.cond-mat.de/events/correl26/",
+    "source": "curated (cond-mat.de / Jülich)",
+    "topics": "correlated electrons, many-body physics, summer school"
+  },
+  {
+    "name": "Les Houches 2026: Nonequilibrium Physics in Nanoconfinement",
+    "full_title": "CECAM-Les Houches School on Nonequilibrium Physics in Nanoconfinement",
+    "when": "September 14–25, 2026",
+    "where": "Les Houches, France",
+    "deadline": "2026-04-30",
+    "session_start": "2026-09-14",
+    "url": "https://www.fluxionic.org/events/les-houches-2026",
+    "source": "curated (CECAM / Les Houches)",
+    "topics": "nonequilibrium physics, nanophysics, summer school"
+  },
+  {
+    "name": "Quantum Theory On All Scales",
+    "full_title": "Les Houches Summer School: Quantum Theory On All Scales",
+    "when": "August 3–28, 2026",
+    "where": "Les Houches, France",
+    "deadline": "2026-05-15",
+    "session_start": "2026-08-03",
+    "url": "https://www.houches-school-physics.com/program/program-2026/summer-school-quantum-theory-on-all-scales-1638813.kjsp",
+    "source": "curated (École de Physique des Houches)",
+    "topics": "quantum theory, mathematical physics, summer school"
+  },
+  {
+    "name": "ML4MatSci PhD Summer School 2026",
+    "full_title": "Hands-on Machine Learning for Research in Materials Sciences (2nd PhD Summer School)",
+    "when": "June 10–12, 2026",
+    "where": "Sarajevo, Bosnia and Herzegovina",
+    "deadline": "2026-04-10",
+    "session_start": "2026-06-10",
+    "url": "https://www.eumine-cost.eu/events/ml4matsci-hands-on-machine-learning-for-research-in-materials-sciences-2nd-phd-summer-school/",
+    "source": "curated (EuMINe COST)",
+    "topics": "materials informatics, machine learning, summer school"
+  },
+  {
+    "name": "New Frontiers in Ultrafast Quantum Optics",
+    "full_title": "Summer School on New Frontiers in Ultrafast Quantum Optics",
+    "when": "July 27–31, 2026",
+    "where": "Como, Italy",
+    "deadline": "2026-05-31",
+    "session_start": "2026-07-27",
+    "url": "https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en",
+    "source": "curated (Como, Italy)",
+    "topics": "ultrafast optics, quantum optics, summer school"
+  },
+  {
+    "name": "Topology and Fractionalisation in Quantum Matter",
+    "full_title": "Summer School on Topology and Fractionalisation in Quantum Matter and Synthetic Platforms",
+    "when": "August 3–15, 2026",
+    "where": "Cargèse, France",
+    "deadline": "2026-04-28",
+    "session_start": "2026-08-03",
+    "url": "https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en",
+    "source": "curated (Cargèse, France)",
+    "topics": "topology, quantum matter, summer school"
+  },
+  {
+    "name": "DLRL Summer School 2026",
+    "full_title": "Deep Learning and Reinforcement Learning Summer School (DLRL)",
+    "when": "July 2026 (TBA)",
+    "where": "Montreal, Canada",
+    "deadline": "2026-04-15",
+    "session_start": "2026-07-06",
+    "url": "https://dlrl.ca/",
+    "source": "curated (CIFAR DLRL)",
+    "topics": "deep learning, reinforcement learning, summer school"
+  },
+  {
+    "name": "ICTP Summer School 2026",
+    "full_title": "ICTP Summer School on Condensed Matter and Statistical Physics",
+    "when": "July 2026 (TBA)",
+    "where": "Trieste, Italy",
+    "deadline": "2026-05-01",
+    "session_start": "2026-07-01",
+    "url": "https://www.ictp.it/",
+    "source": "curated (ICTP, estimated)",
+    "topics": "condensed matter, statistical physics, summer school"
+  }
+]

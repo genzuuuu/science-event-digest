@@ -4,11 +4,14 @@ from dataclasses import dataclass
 from scrape.sources.ai_deadlines import fetch_ai_deadlines
 from scrape.sources.curated import fetch_curated_conferences
 from scrape.sources.emrs import fetch_emrs_meetings
+from scrape.sources.summer_schools import fetch_summer_schools
 from scrape.sources.wikicfp import fetch_wikicfp
 
 SOURCE_NAMES = [
     "ai-deadlines (mlciv.com) — top-tier AI/ML/CV/NLP/robotics",
     "curated — APS/MRS/NeurIPS/ICML/CVPR/ICLR/Elsevier materials (verified)",
+    "curated summer schools — Les Houches, MLSS, Jülich, CECAM, ICTP, etc.",
+    "TU Dresden SFB 1143 — external summer/winter schools (Europe-focused)",
     "WikiCFP — APS/MRS/IEEE/condensed matter (international filter)",
     "E-MRS (european-mrs.com) — European materials meetings",
 ]
@@ -24,6 +27,7 @@ class ConferenceEvent:
     url: str
     source: str
     topics: str = ""
+    event_type: str = "conference"
 
 
 def _dedupe_key(event: ConferenceEvent) -> str:
@@ -42,6 +46,7 @@ def fetch_upcoming_conferences(
     fetchers = [
         ("ai-deadlines", lambda: fetch_ai_deadlines(today, horizon_end)),
         ("curated", lambda: fetch_curated_conferences(today, horizon_end)),
+        ("summer-schools", lambda: fetch_summer_schools(today, horizon_end)),
         ("wikicfp", lambda: fetch_wikicfp(today, horizon_end)),
         ("emrs", lambda: fetch_emrs_meetings(today, horizon_end)),
     ]
@@ -64,10 +69,13 @@ def fetch_upcoming_conferences(
 
 
 def format_conferences_for_llm(events: list[ConferenceEvent], today: datetime.date, horizon_days: int) -> str:
+    conferences = [e for e in events if e.event_type != "summer_school"]
+    summer_schools = [e for e in events if e.event_type == "summer_school"]
+
     lines = [
-        f"Conference submission deadlines between {today.isoformat()} and "
+        f"Submission / application deadlines between {today.isoformat()} and "
         f"{(today + datetime.timedelta(days=horizon_days)).isoformat()}",
-        "Topics: physics, materials science, AI / machine learning",
+        "Topics: physics, materials science, AI / machine learning, summer schools",
         "Sources:",
     ]
     for source in SOURCE_NAMES:
@@ -75,20 +83,44 @@ def format_conferences_for_llm(events: list[ConferenceEvent], today: datetime.da
     lines.append("")
     lines.append(
         "Prioritize major international academic venues (APS, MRS, E-MRS, IEEE, ACM, "
-        "NeurIPS, ICML, ICLR, CVPR, AAAI, etc.). Deprioritize regional aggregator conferences."
+        "NeurIPS, ICML, ICLR, CVPR, AAAI, Les Houches, MLSS, CECAM, ICTP, etc.). "
+        "Deprioritize regional aggregator conferences."
+    )
+    lines.append("")
+    lines.append(
+        "Include a dedicated Summer Schools section for PhD-level schools in physics, "
+        "materials, and ML. Note if an application deadline may have just passed but "
+        "the school session is still upcoming."
     )
     lines.append("")
 
-    for i, event in enumerate(events, 1):
-        lines.append(f"### Conference [{i}]")
-        lines.append(f"Name: {event.name}")
-        lines.append(f"Full title: {event.full_title}")
-        lines.append(f"URL: {event.url}")
-        lines.append(f"Conference dates: {event.when}")
-        lines.append(f"Location: {event.where}")
-        lines.append(f"Submission deadline: {event.deadline.isoformat() if event.deadline else 'unknown'}")
-        lines.append(f"Data source: {event.source}")
-        if event.topics:
-            lines.append(f"Topics: {event.topics}")
+    if conferences:
+        lines.append("## Conferences")
         lines.append("")
+        for i, event in enumerate(conferences, 1):
+            lines.extend(_format_event_block(i, event))
+
+    if summer_schools:
+        lines.append("## Summer Schools")
+        lines.append("")
+        for i, event in enumerate(summer_schools, 1):
+            lines.extend(_format_event_block(i, event, label="Summer School"))
+
     return "\n".join(lines)
+
+
+def _format_event_block(index: int, event: ConferenceEvent, label: str = "Conference") -> list[str]:
+    lines = [
+        f"### {label} [{index}]",
+        f"Name: {event.name}",
+        f"Full title: {event.full_title}",
+        f"URL: {event.url}",
+        f"Dates: {event.when}",
+        f"Location: {event.where}",
+        f"Application deadline: {event.deadline.isoformat() if event.deadline else 'unknown'}",
+        f"Data source: {event.source}",
+    ]
+    if event.topics:
+        lines.append(f"Topics: {event.topics}")
+    lines.append("")
+    return lines

@@ -3,7 +3,7 @@
 Automated bilingual (EN/ZH) digests for:
 
 1. **PKS Weekly** — talks, colloquia, workshops at [MPI PKS Dresden](https://www.pks.mpg.de) for the coming week (every Sunday).
-2. **Conference Deadlines** — global physics / materials / AI conferences with approaching submission deadlines (last Sunday of each month).
+2. **Conference Deadlines** — global physics / materials / AI conferences and summer schools with approaching deadlines (last Sunday of each month).
 
 ## Data sources
 
@@ -11,6 +11,8 @@ Automated bilingual (EN/ZH) digests for:
 |--------|----------|
 | [ai-deadlines](https://mlciv.com/ai-deadlines/) | Top-tier AI / ML / CV / NLP / robotics |
 | `data/curated_conferences.json` | Verified international physics / materials / AI venues |
+| `data/curated_summer_schools.json` | Les Houches, MLSS, Jülich, CECAM, ICTP, etc. |
+| [TU Dresden SFB 1143](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen) | Curated list of external summer / winter schools |
 | [WikiCFP](https://wikicfp.com) | APS, MRS, IEEE, condensed matter (international filter) |
 | [E-MRS](https://www.european-mrs.com/meetings/deadlines) | European materials research meetings |
 

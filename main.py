@@ -25,22 +25,28 @@ PKS_PROMPT_ZH = """
 """
 
 CONF_PROMPT_EN = """
-You are curating a monthly digest of international conferences in physics, materials science,
-and AI / machine learning whose submission deadlines are approaching soon.
+You are curating a monthly digest of international conferences and summer schools in physics,
+materials science, and AI / machine learning whose submission or application deadlines are
+approaching soon (or whose sessions are upcoming).
 Prioritize major international academic venues (APS, MRS, E-MRS, IEEE, ACM, NeurIPS, ICML,
-ICLR, CVPR, AAAI, ACL, RSS, CoRL, etc.). Deprioritize or omit regional aggregator
-conferences and suspected predatory meetings, especially generic "International Conference on..."
-events in low-signal locations.
-For each selected item: conference name, location, conference dates, deadline, why it matters,
-and a markdown link. Flag urgent deadlines (within 14 days). Write in English.
+ICLR, CVPR, AAAI, ACL, RSS, CoRL, Les Houches, MLSS, CECAM, ICTP, Jülich autumn schools, etc.).
+Deprioritize or omit regional aggregator conferences and suspected predatory meetings.
+Structure the digest in two sections: (1) Conferences with paper submission deadlines,
+(2) Summer Schools with application deadlines. For summer schools, emphasize hands-on PhD-level
+training in Europe and other major international venues (Les Houches, Tübingen MLSS, Jülich, Como,
+Cargèse, etc.). Note if a deadline may have recently passed but the school is still worth checking.
+For each item: name, location, dates, deadline, why it matters, and a markdown link.
+Flag urgent deadlines (within 14 days). Write in English.
 """
 
 CONF_PROMPT_ZH = """
-你正在整理全球物理、材料、人工智能/机器学习方向的学术会议导读，重点是投稿截止日期临近的
-国际性重要会议。优先 APS、MRS、E-MRS、IEEE、ACM、NeurIPS、ICML、ICLR、CVPR、AAAI、ACL、
-RSS、CoRL 等知名会议；略过或少写区域性聚合会议和疑似掠夺性会议，尤其是地点信号较弱、
-题目泛泛的 "International Conference on..." 类会议。
-每项注明会议名称、地点、会期、截止日期、推荐理由和 markdown 链接。
+你正在整理全球物理、材料、人工智能/机器学习方向的学术会议与暑期学校导读，重点是投稿或
+申请截止日期临近、或课程即将开始的项目。优先 APS、MRS、E-MRS、IEEE、ACM、NeurIPS、ICML、
+ICLR、CVPR、AAAI、Les Houches、MLSS、CECAM、ICTP、Jülich 秋季学校等知名国际项目；略过
+区域性聚合会议和疑似掠夺性会议。请分两部分：(1) 会议投稿截止，(2) 暑期学校申请截止。
+暑期学校侧重欧洲及其他重要国际 venue 的 PhD 层级动手训练（Les Houches、图宾根 MLSS、
+Jülich、Como、Cargèse 等）。若截止日刚过但课程仍即将举办，请注明可再确认是否还有名额。
+每项注明名称、地点、会期/课程日期、截止日期、推荐理由和 markdown 链接。
 特别标注 14 天内截止的紧急项。用中文撰写。
 """
 
@@ -132,7 +138,7 @@ def run_conferences_monthly(api_key, base_url, model, send_email: bool, force: b
         f"- **Month:** {month_str}\n"
         f"- **Deadline window:** next {horizon} days\n"
         f"- **Generated:** {now.isoformat()}\n"
-        f"- **Sources:** ai-deadlines, curated, WikiCFP (filtered), E-MRS\n"
+        f"- **Sources:** ai-deadlines, curated, summer schools, WikiCFP (filtered), E-MRS\n"
     )
 
     save_report(f"data/conferences/{month_str}.md", header, summary_en, summary_zh)
