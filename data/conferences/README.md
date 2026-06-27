@@ -2,320 +2,328 @@
 
 - **Month:** 2026-06
 - **Deadline window:** next 60 days
-- **Generated:** 2026-06-24T07:45:46.877700
+- **Generated:** 2026-06-27T18:25:27.580342
 - **Sources:** ai-deadlines, curated, summer schools, WikiCFP (filtered), E-MRS
 
 
 ## English
 
-# Monthly Digest: International Conferences & Summer Schools
-
-**Deadline window:** 2026-06-24 to 2026-08-23  
-**Topics:** Physics, Materials Science, AI / Machine Learning
+Here is the curated monthly digest of international conferences and summer schools, prioritized by upcoming deadlines and relevance to physics, materials science, and AI/ML.
 
 ---
 
-## Section 1: Conferences with Paper Submission Deadlines
+# Monthly Digest: Conferences & Summer Schools (Deadlines June 27 – August 26, 2026)
 
-### 🔴 URGENT (deadline within 14 days)
+## Section 1: Conferences (Paper Submission Deadlines)
 
-#### [1] WACV 2027 — IEEE/CVF Winter Conference on Applications of Computer Vision
-- **Location:** TBA
-- **Dates:** March 6–10, 2027
-- **Submission deadline:** June 26, 2026 🔴
-- **Why it matters:** Top-tier computer vision conference (CVF/IEEE sponsored); strong venue for applied CV, including materials imaging and physics-informed vision.
-- [WACV 2027 Call for Papers](https://wacv.thecvf.com/Conferences/2027/CallForPapers)
+**Urgent deadlines (within 14 days of June 27, 2026) are flagged.**
 
----
+### Conference [1]
+*   **Name:** Digital Culture & Society 2026: The Targeting State
+*   **Location:** Austria
+*   **Dates:** June 10, 2026 – July 15, 2026
+*   **Submission Deadline:** 2026-07-10 (🔴 Urgent)
+*   **Why it matters:** This venue focuses on the intersection of AI, surveillance, and predictive power, relevant for researchers working on the societal and ethical implications of AI technologies.
+*   [Digital Culture & Society 2026](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=200175&copyownerid=199255)
 
-### Upcoming Deadlines
+### Conference [2]
+*   **Name:** INLG 2026
+*   **Location:** Utrecht, the Netherlands
+*   **Dates:** October 17-21, 2026
+*   **Submission Deadline:** 2026-07-15 (🔴 Urgent)
+*   **Why it matters:** The premier international conference for research on Natural Language Generation, a core area of NLP and AI.
+*   [INLG 2026](https://2026.inlgmeeting.org/)
 
-#### [2] INLG 2026 — International Conference on Natural Language Generation
-- **Location:** Utrecht, Netherlands
-- **Dates:** October 17–21, 2026
-- **Submission deadline:** July 15, 2026
-- **Why it matters:** Primary venue for NLG, including scientific report generation and language models for materials science.
-- [INLG 2026](https://2026.inlgmeeting.org/)
+### Conference [3]
+*   **Name:** ACM SIGMOD 2027
+*   **Location:** Huntington Beach, California, USA
+*   **Dates:** June 13-19, 2027
+*   **Submission Deadline:** 2026-07-17 (🔴 Urgent)
+*   **Why it matters:** One of the top venues worldwide for data management, databases, and scalable data systems, deeply connected to AI/ML infrastructure.
+*   [SIGMOD 2027](https://2027.sigmod.org/)
 
-#### [3] SIGMOD 2027 — ACM SIGMOD International Conference on Management of Data
-- **Location:** Huntington Beach, California, USA
-- **Dates:** June 13–19, 2027
-- **Submission deadline:** July 17, 2026
-- **Why it matters:** Premier database conference; relevant to materials databases, scientific data management, and ML data pipelines.
-- [SIGMOD 2027](https://2027.sigmod.org/)
+### Conference [4]
+*   **Name:** AAAI-27 (AAAI Conference on Artificial Intelligence)
+*   **Location:** Montréal, Canada
+*   **Dates:** February 16-23, 2027
+*   **Submission Deadline:** 2026-07-28 (🔴 Urgent)
+*   **Why it matters:** A top-tier, broad AI conference. Acceptance is highly selective and prestigious across all subfields of AI.
+*   [AAAI 2027](https://aaai.org/conference/aaai/aaai-27/)
 
-#### [4] AAAI 2027 — AAAI Conference on Artificial Intelligence
-- **Location:** Montréal, Canada
-- **Dates:** February 16–23, 2027
-- **Submission deadline:** July 28, 2026
-- **Why it matters:** Top-tier AI conference covering ML, NLP, CV, robotics, and knowledge representation; strong track on AI for science.
-- [AAAI 2027](https://aaai.org/conference/aaai/aaai-27/)
+### Conference [5]
+*   **Name:** APS March Meeting 2027
+*   **Location:** Denver, Colorado, USA
+*   **Dates:** March 2027 (TBA)
+*   **Submission Deadline:** 2026-08-01
+*   **Why it matters:** The largest global meeting for condensed matter and materials physics. Essential for presenting new results in physics and materials science.
+*   [APS March Meeting 2027](https://meetings.aps.org/Meeting/MAR27/APS_epitome)
 
-#### [5] APS March Meeting 2027 — American Physical Society
-- **Location:** Denver, Colorado, USA
-- **Dates:** March 2027 (TBA)
-- **Submission deadline:** August 1, 2026 (estimated)
-- **Why it matters:** The largest annual physics meeting worldwide; essential for condensed matter, materials physics, and quantum materials.
-- [APS March Meeting 2027](https://meetings.aps.org/Meeting/MAR27/APS_epitome)
+### Conference [6]
+*   **Name:** ACL Rolling Review (ARR) – August Cycle
+*   **Location:** TBA
+*   **Dates:** July 27 – August 1, 2027
+*   **Submission Deadline:** 2026-08-03
+*   **Why it matters:** The primary submission portal for major NLP conferences (ACL, EMNLP, NAACL). Meeting this deadline routes papers to the EACL 2027 or ACL 2027 decision.
+*   [ARR Dates](https://aclrollingreview.org/dates)
 
-#### [6] ARR August Cycle — ACL Rolling Review
-- **Location:** Virtual (rolling review)
-- **Dates:** July 27 – August 1, 2027 (commitment window)
-- **Submission deadline:** August 3, 2026
-- **Why it matters:** Central NLP submission system feeding ACL, EACL, NAACL, and EMNLP; essential for NLP researchers in scientific domains.
-- [ARR Dates](https://aclrollingreview.org/dates)
+### Conference [7]
+*   **Name:** EACL 2027
+*   **Location:** Athens, Greece
+*   **Dates:** March 9-14, 2027
+*   **Submission Deadline:** 2026-08-03
+*   **Why it matters:** The leading European conference for computational linguistics and natural language processing.
+*   [EACL 2027](https://2027.eacl.org/calls/papers/)
 
-#### [7] EACL 2027 — 20th Conference of the European Chapter of the Association for Computational Linguistics
-- **Location:** Athens, Greece
-- **Dates:** March 9–14, 2027
-- **Submission deadline:** August 3, 2026
-- **Why it matters:** Major European NLP conference; relevant for scientific text mining, materials language processing, and scholarly communication.
-- [EACL 2027 Call for Papers](https://2027.eacl.org/calls/papers/)
+### Conference [8]
+*   **Name:** ICDCM 2026 (International Conference on Diamond and Carbon Materials)
+*   **Location:** Donostia-San Sebastián, Spain
+*   **Dates:** August 30 – September 3, 2026
+*   **Submission Deadline:** 2026-08-07
+*   **Why it matters:** A key international forum for research on advanced carbon materials, including diamond, graphene, and nanotubes. Relevant for materials science and physics.
+*   [ICDCM 2026](https://www.elsevier.com/en-gb/events/conferences/all/international-conference-on-diamond-and-carbon-materials)
 
-#### [8] ICDCM 2026 — 36th International Conference on Diamond and Carbon Materials
-- **Location:** Donostia-San Sebastián, Spain
-- **Dates:** August 30 – September 3, 2026
-- **Submission deadline:** August 7, 2026
-- **Why it matters:** Leading international forum for diamond, graphene, and carbon-based materials; strong industrial and academic presence.
-- [ICDCM 2026](https://www.elsevier.com/en-gb/events/conferences/all/international-conference-on-diamond-and-carbon-materials)
+### Conference [9]
+*   **Name:** UncertaiNLP
+*   **Location:** TBA
+*   **Dates:** November 15-18, 2026
+*   **Submission Deadline:** 2026-08-08
+*   **Why it matters:** A focused workshop on uncertainty quantification and robustness in natural language processing, a growing area at the intersection of ML and NLP.
+*   [UncertaiNLP](https://uncertainlp.github.io/#important-dates)
 
-#### [9] UncertaiNLP 2026
-- **Location:** TBA
-- **Dates:** November 15–18, 2026
-- **Submission deadline:** August 8, 2026
-- **Why it matters:** Emerging workshop on uncertainty quantification in NLP; relevant for reliable ML in scientific applications.
-- [UncertaiNLP](https://uncertainlp.github.io/#important-dates)
+### Conference [10]
+*   **Name:** IEEE ICMRE 2027 (Mechatronics and Robotics Engineering)
+*   **Location:** Grimstad, Norway
+*   **Dates:** March 3-5, 2027
+*   **Submission Deadline:** 2026-08-20
+*   **Why it matters:** IEEE-sponsored conference covering robotics, automation, and mechatronics, relevant for AI and physics-based modeling in robotics.
+*   [IEEE ICMRE 2027](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195312&copyownerid=13881)
 
-#### [10] IEEE ICMRE 2027 — 13th International Conference on Mechatronics and Robotics Engineering
-- **Location:** University of Agder, Grimstad, Norway
-- **Dates:** March 3–5, 2027
-- **Submission deadline:** August 20, 2026
-- **Why it matters:** IEEE conference bridging robotics and materials science; relevant for automated labs and robotic materials synthesis.
-- [IEEE ICMRE 2027](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195312&copyownerid=13881)
+### Conference [11]
+*   **Name:** IEEE BigData 2026
+*   **Location:** Phoenix, Arizona, USA
+*   **Dates:** December 14-17, 2026
+*   **Submission Deadline:** 2026-08-21
+*   **Why it matters:** A leading conference for big data systems, analytics, machine learning, and data mining.
+*   [IEEE BigData 2026](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195392&copyownerid=13149)
 
-#### [11] IEEE BigData 2026 — 14th IEEE International Conference on Big Data
-- **Location:** Phoenix, Arizona, USA
-- **Dates:** December 14–17, 2026
-- **Submission deadline:** August 21, 2026
-- **Why it matters:** Major IEEE venue for big data analytics; includes materials informatics, ML for scientific data, and FAIR data initiatives.
-- [IEEE BigData 2026](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195392&copyownerid=13149)
+### Conference [12]
+*   **Name:** WSDM 2027 (ACM Conference on Web Search and Data Mining)
+*   **Location:** Hong Kong
+*   **Dates:** February 15-19, 2027
+*   **Submission Deadline:** 2026-08-24
+*   **Why it matters:** Top-tier conference for research on web search, data mining, and user modeling, with strong connections to ML and AI.
+*   [WSDM 2027](https://wsdm-conference.org/2027/)
 
----
-
-## Section 2: Summer Schools with Application Deadlines
-
-### Past Deadlines — Still Worth Checking (Sessions Upcoming)
-
-#### [1] Topology and Fractionalisation in Quantum Matter
-- **Location:** Cargèse, France
-- **Dates:** August 3–15, 2026
-- **Application deadline:** April 28, 2026 (passed)
-- **Why it matters:** Prestigious school in a renowned Corsica venue; covers topological quantum matter, anyons, and synthetic platforms. Late applications may be accepted if space permits.
-- [SFB 1143 Summer School](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
-
-#### [2] Les Houches 2026: Nonequilibrium Physics in Nanoconfinement
-- **Location:** Les Houches, France
-- **Dates:** September 14–25, 2026
-- **Application deadline:** April 30, 2026 (passed)
-- **Why it matters:** CECAM/Les Houches school; focuses on nanoscale transport, ionics, and out-of-equilibrium physics. Late inquiries possible.
-- [CECAM Les Houches School](https://www.fluxionic.org/events/les-houches-2026)
-
-#### [3] ICTP Summer School on Condensed Matter and Statistical Physics
-- **Location:** Trieste, Italy
-- **Dates:** July 2026 (TBA)
-- **Application deadline:** May 1, 2026 (estimated; passed)
-- **Why it matters:** Abdus Salam ICTP flagship school; developing-country participants strongly supported. Check website for late applications or waiting list.
-- [ICTP Summer School](https://www.ictp.it/)
-
-#### [4] Les Houches Summer School: Quantum Theory On All Scales
-- **Location:** Les Houches, France
-- **Dates:** August 3–28, 2026
-- **Application deadline:** May 15, 2026 (passed)
-- **Why it matters:** Intensive 4-week school covering quantum field theory, gravity, and condensed matter; world-class lecturers.
-- [Les Houches Quantum Theory School](https://www.houches-school-physics.com/program/program-2026/summer-school-quantum-theory-on-all-scales-1638813.kjsp)
-
-#### [5] Correl26 — Autumn School on Correlated Electrons
-- **Location:** Forschungszentrum Jülich, Germany
-- **Dates:** September 21–25, 2026
-- **Application deadline:** May 31, 2026 (passed)
-- **Why it matters:** Renowned Jülich school series; advanced lectures on many-body methods, DMFT, tensor networks, and quantum materials.
-- [Correl26 Autumn School](https://www.cond-mat.de/events/correl26/)
-
-#### [6] New Frontiers in Ultrafast Quantum Optics
-- **Location:** Como, Italy
-- **Dates:** July 27–31, 2026
-- **Application deadline:** May 31, 2026 (passed)
-- **Why it matters:** Intensive school in the historic Lake Como setting; covers attosecond physics, quantum optics, and ultrafast spectroscopy.
-- [Como Ultrafast School](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
+### Conference [13]
+*   **Name:** IEEE PEEE 2027 (Power, Energy and Electrical Engineering)
+*   **Location:** Milan, Italy
+*   **Dates:** January 18-21, 2027
+*   **Submission Deadline:** 2026-08-25
+*   **Why it matters:** IEEE conference focusing on energy systems and electrical engineering applications, relevant for applied physics and AI in energy grids.
+*   [IEEE PEEE 2027](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=194954&copyownerid=13881)
 
 ---
 
-### Open or Deadlines Within Window
+## Section 2: Summer Schools (Application Deadlines)
 
-#### [7] Les Houches – WE Heraeus Summer School: Frontiers of Condensed Matter 2026
-- **Location:** Les Houches, France
-- **Dates:** September 28 – October 9, 2026
-- **Application deadline:** June 15, 2026 (recently passed — check for late applications)
-- **Why it matters:** Joint Les Houches–WE Heraeus foundation school; covers quantum materials, topological matter, and emergent phenomena. Extremely selective.
-- [Frontiers of Condensed Matter School](https://frontiers-les-houches.org/)
+**Note:** Some deadlines below have passed. The schools are listed as they remain prestigious upcoming events. We recommend checking the websites directly for late application possibilities or waitlists.
 
-#### [8] 🔴 MLSS 2026 Tübingen — 50th Machine Learning Summer School
-- **Location:** Tübingen, Germany
-- **Dates:** August 31 – September 11, 2026
-- **Application deadline:** July 31, 2026 🔴
-- **Why it matters:** The landmark MLSS series; this 50th edition at Max Planck Institute for Intelligent Systems features deep learning, probabilistic methods, and AI for science. Hands-on tutorials, PhD-level. Highly competitive.
-- [MLSS 2026 Tübingen](https://mlss2026.is.tuebingen.mpg.de/)
+### Summer School [1] *(Deadline Passed)*
+*   **Name:** Topology and Fractionalisation in Quantum Matter
+*   **Location:** Cargèse, France
+*   **Dates:** August 3–15, 2026
+*   **Application Deadline:** 2026-04-28
+*   **Why it matters:** A premier school on topological phases of matter and fractionalization, held at the famous Institut d'Études Scientifiques de Cargèse. Excellent for PhD students in condensed matter physics. **Check for last-minute openings.**
+*   [Topology and Fractionalisation in Quantum Matter](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
 
----
+### Summer School [2] *(Deadline Passed)*
+*   **Name:** Les Houches 2026: Nonequilibrium Physics in Nanoconfinement
+*   **Location:** Les Houches, France
+*   **Dates:** September 14–25, 2026
+*   **Application Deadline:** 2026-04-30
+*   **Why it matters:** A CECAM co-sponsored school at the historic Les Houches physics center, focused on cutting-edge topics in nanoscale and biological physics. **Check for last-minute openings.**
+*   [Nonequilibrium Physics in Nanoconfinement](https://www.fluxionic.org/events/les-houches-2026)
 
-### Summary of Urgent Deadlines (within 14 days)
+### Summer School [3] *(Deadline Passed)*
+*   **Name:** ICTP Summer School on Condensed Matter and Statistical Physics
+*   **Location:** Trieste, Italy
+*   **Dates:** July 2026 (Exact dates TBA)
+*   **Application Deadline:** 2026-05-01
+*   **Why it matters:** A flagship school from the Abdus Salam International Centre for Theoretical Physics (ICTP), offering world-class lectures for PhD students and postdocs. **Check for last-minute openings.**
+*   [ICTP Summer School](https://www.ictp.it/)
 
-| Item | Deadline | Event |
-|------|----------|-------|
-| 🔴 | Jun 26 | WACV 2027 paper submission |
-| 🔴 | Jul 31 | MLSS 2026 Tübingen application |
+### Summer School [4] *(Deadline Passed)*
+*   **Name:** Quantum Theory On All Scales
+*   **Location:** Les Houches, France
+*   **Dates:** August 3–28, 2026
+*   **Application Deadline:** 2026-05-15
+*   **Why it matters:** A four-week Les Houches summer school covering topics from quantum information to quantum gravity. Highly selective and intellectually intense. **Check for last-minute openings.**
+*   [Quantum Theory On All Scales](https://www.houches-school-physics.com/program/program-2026/summer-school-quantum-theory-on-all-scales-1638813.kjsp)
 
----
+### Summer School [5] *(Deadline Passed)*
+*   **Name:** Correl26: Correlated Materials — Autumn School
+*   **Location:** Jülich, Germany
+*   **Dates:** September 21–25, 2026
+*   **Application Deadline:** 2026-05-31
+*   **Why it matters:** The annual autumn school at the Jülich Supercomputing Centre, focusing on many-body physics and computational methods for strongly correlated electrons. **Check for last-minute openings.**
+*   [Correl26](https://www.cond-mat.de/events/correl26/)
 
-*Note: Deadlines for international conferences are generally firm. For summer schools, if the listed deadline has passed, we recommend contacting organizers directly — many accept late applications or maintain waiting lists, especially for self-funded participants.*
+### Summer School [6] *(Deadline Passed)*
+*   **Name:** New Frontiers in Ultrafast Quantum Optics
+*   **Location:** Como, Italy
+*   **Dates:** July 27–31, 2026
+*   **Application Deadline:** 2026-05-31
+*   **Why it matters:** A school in the historic Villa Olmo (Como), covering ultrafast laser science and quantum optics, a key area for modern physics and materials characterization.
+*   [New Frontiers in Ultrafast Quantum Optics](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
+
+### Summer School [7] *(Deadline Passed)*
+*   **Name:** Frontiers of Condensed Matter 2026
+*   **Location:** Les Houches, France
+*   **Dates:** September 28 – October 9, 2026
+*   **Application Deadline:** 2026-06-15
+*   **Why it matters:** A joint Les Houches – WE Heraeus summer school on the forefront of quantum materials and condensed matter physics. **Check for last-minute openings.**
+*   [Frontiers of Condensed Matter 2026](https://frontiers-les-houches.org/)
+
+### Summer School [8] *(Open)*
+*   **Name:** MLSS 2026 Tübingen (50th Machine Learning Summer School)
+*   **Location:** Tübingen, Germany
+*   **Dates:** August 31 – September 11, 2026
+*   **Application Deadline:** 2026-07-31 (🔴 Urgent)
+*   **Why it matters:** The premier, longest-running machine learning summer school, hosted by the Max Planck Institute for Intelligent Systems. Ideal for graduate students and researchers in ML/AI.
+*   [MLSS 2026 Tübingen](https://mlss2026.is.tuebingen.mpg.de/)
 
 ## 中文
 
-好的，这是根据您的要求整理的近期物理、材料科学、人工智能/机器学习领域的学术会议和暑期学校导读。已特别标注了14天内截止的紧急项。
+好的，这是根据您的要求整理的全球物理、材料、人工智能/机器学习方向的学术会议与暑期学校导读。
+
+## 导读：物理、材料与人工智能/机器学习学术会议与暑期学校
+
+本导读分为**会议投稿截止**和**暑期学校申请截止**两部分，重点关注国际顶级学术活动。所有日期与链接均基于您提供的信息。**请注意：当前日期设置为2026年6月26日，14天内截止的紧急项已特别标注。**
 
 ---
 
-## (1) 会议投稿截止
+### (1) 会议投稿截止
 
-### 紧急: 3天内截止
+**⚠️ 紧急！14天内截止**
 
-- **⬆️ [WACV 2027](https://wacv.thecvf.com/Conferences/2027/CallForPapers)** (IEEE/CVF Winter Conference on Applications of Computer Vision)
-    - **地点**: 待定
-    - **会议日期**: 2027年3月6日 - 10日
-    - **摘要/全文截止**: **2026年6月26日** (紧急! 3天内截止)
-    - **推荐理由**: 计算机视觉应用领域的顶级会议，CVPR的姊妹会，含金量高。
-    - **主题**: 计算机视觉 (CV), 机器学习 (ML)
+*   **Digital Culture & Society 2026: The Targeting State**
+    *   地点：奥地利
+    *   会议日期：2026年6月10日 - 7月15日
+    *   **投稿截止：2026-07-10**
+    *   推荐理由：探讨AI、监控与预测性权力的交叉主题，适合科技与社会研究方向的学者。
+    *   [会议链接](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=200175&amp;copyownerid=199255)
 
-### 其他会议
+*   **INLG 2026 (国际自然语言生成会议)**
+    *   地点：荷兰乌得勒支
+    *   会议日期：2026年10月17-21日
+    *   **投稿截止：2026-07-15**
+    *   推荐理由：NLP领域的重要会议，专注于自然语言生成技术。
+    *   [会议链接](https://2026.inlgmeeting.org/)
 
-- **[INLG 2026](https://2026.inlgmeeting.org/)** (International Natural Language Generation Conference)
-    - **地点**: 荷兰，乌得勒支
-    - **会议日期**: 2026年10月17日 - 21日
-    - **全文截止**: 2026年7月15日
-    - **推荐理由**: 自然语言生成领域的核心国际会议。
-    - **主题**: 自然语言处理 (NLP)
+*   **SIGMOD 2027 (ACM数据管理国际会议)**
+    *   地点：美国加州亨廷顿海滩
+    *   会议日期：2027年6月13-19日
+    *   **投稿截止：2026-07-17**
+    *   推荐理由：数据库和数据管理领域的顶级会议。
+    *   [会议链接](https://2027.sigmod.org/)
 
-- **[SIGMOD 2027](https://2027.sigmod.org/)** (ACM SIGMOD International Conference on Management of Data)
-    - **地点**: 美国，加利福尼亚州，亨廷顿海滩
-    - **会议日期**: 2027年6月13日 - 19日
-    - **摘要截止**: 2026年7月17日
-    - **推荐理由**: 数据库与数据管理领域的绝对顶会。
-    - **主题**: 数据挖掘 (DM)
+*   **AAAI 2027 (人工智能大会)**
+    *   地点：加拿大蒙特利尔
+    *   会议日期：2027年2月16-23日
+    *   **投稿截止：2026-07-28**
+    *   推荐理由：人工智能领域的旗舰会议之一，涵盖广泛AI子领域。
+    *   [会议链接](https://aaai.org/conference/aaai/aaai-27/)
 
-- **[AAAI 2027](https://aaai.org/conference/aaai/aaai-27/)** (AAAI Conference on Artificial Intelligence)
-    - **地点**: 加拿大，蒙特利尔
-    - **会议日期**: 2027年2月16日 - 23日
-    - **全文截止**: 2026年7月28日
-    - **推荐理由**: 人工智能领域的顶级综合性旗舰会议。
-    - **主题**: 人工智能 (AI) 全方向
+*   **APS March Meeting 2027 (美国物理学会三月会议)**
+    *   地点：美国科罗拉多州丹佛
+    *   会议日期：2027年3月 (具体待定)
+    *   **摘要截止：2026-08-01** (预估)
+    *   推荐理由：全球最大的物理学年会之一，凝聚态物理、材料物理等领域的最新研究成果发布平台。
+    *   [会议链接](https://meetings.aps.org/Meeting/MAR27/APS_epitome)
 
-- **[APS March Meeting 2027](https://meetings.aps.org/Meeting/MAR27/APS_epitome)** (American Physical Society March Meeting)
-    - **地点**: 美国，科罗拉多州，丹佛
-    - **会议日期**: 2027年3月 (具体时间待公布)
-    - **摘要截止**: 约2026年8月1日 (预计)
-    - **推荐理由**: 凝聚态物理领域世界最大规模的年会，投稿门槛适中，交流机会极多。
-    - **主题**: 物理学, 凝聚态物质
+**其他截止日期较近的会议**
 
-- **[EACL 2027](https://2027.eacl.org/calls/papers/)** (The 20th Conference of the European Chapter of the Association for Computational Linguistics)
-    - **地点**: 希腊，雅典
-    - **会议日期**: 2027年3月9日 - 14日
-    - **全文截止**: 2026年8月3日
-    - **推荐理由**: ACL欧洲分会主会，计算语言学领域的重要国际会议。
-    - **主题**: 自然语言处理 (NLP)
+*   **ICDCM 2026 (第36届国际金刚石与碳材料会议)**
+    *   地点：西班牙多诺斯蒂亚-圣塞巴斯蒂安
+    *   会议日期：2026年8月30日 - 9月3日
+    *   **投稿截止：2026-08-07**
+    *   推荐理由：碳材料领域的专业国际会议，涵盖金刚石、石墨烯、碳纳米管等。
+    *   [会议链接](https://www.elsevier.com/en-gb/events/conferences/all/international-conference-on-diamond-and-carbon-materials)
 
-- **[ICDCM 2026](https://www.elsevier.com/en-gb/events/conferences/all/international-conference-on-diamond-and-carbon-materials)** (36th International Conference on Diamond and Carbon Materials)
-    - **地点**: 西班牙，多诺斯蒂亚-圣塞巴斯蒂安
-    - **会议日期**: 2026年8月30日 - 9月3日
-    - **摘要截止**: 2026年8月7日
-    - **推荐理由**: 金刚石与碳材料领域的专业权威会议，Elsevier经典系列。
-    - **主题**: 材料科学, 碳材料, 金刚石
+*   **IEEE ICMRE 2027 (第13届机电一体化和机器人工程国际会议)**
+    *   地点：挪威格里姆斯塔德，阿格德尔大学
+    *   会议日期：2027年3月3-5日
+    *   **投稿截止：2026-08-20**
+    *   推荐理由：IEEE主办，聚焦机器人与机电系统的设计与应用。
+    *   [会议链接](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195312&amp;copyownerid=13881)
 
-- **[IEEE ICMRE 2027](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195312&amp;copyownerid=13881)** (IEEE--2027 the 13th International Conference on Mechatronics and Robotics Engineering)
-    - **地点**: 挪威，格里姆斯塔德，阿格德尔大学
-    - **会议日期**: 2027年3月3日 - 5日
-    - **全文截止**: 2026年8月20日
-    - **推荐理由**: IEEE主办的机电一体化与机器人工程国际会议，接收机器人、控制等相关工作。
-    - **主题**: IEEE, 机器人学
+*   **IEEE BigData 2026 (第14届IEEE大数据国际会议)**
+    *   地点：美国亚利桑那州凤凰城
+    *   会议日期：2026年12月14-17日
+    *   **投稿截止：2026-08-21**
+    *   推荐理由：大数据领域的权威IEEE会议，涵盖数据科学、机器学习等。
+    *   [会议链接](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195392&amp;copyownerid=13149)
 
-- **[IEEE BigData 2026](http://wikicfp.com/cfp/servlet/event.showcfp?eventid=195392&amp;copyownerid=13149)** (14th IEEE International Conference on Big Data)
-    - **地点**: 美国，亚利桑那州，凤凰城
-    - **会议日期**: 2026年12月14日 - 17日
-    - **全文截止**: 2026年8月21日
-    - **推荐理由**: IEEE大数据领域旗舰会议，涵盖数据科学与工程。
-    - **主题**: IEEE, 大数据
+*   **WSDM 2027 (ACM网络搜索与数据挖掘国际会议)**
+    *   地点：中国香港
+    *   会议日期：2027年2月15-19日
+    *   **投稿截止：2026-08-24**
+    *   推荐理由：网络搜索、数据挖掘和相关AI领域的顶级会议。
+    *   [会议链接](https://wsdm-conference.org/2027/)
 
 ---
 
-## (2) 暑期学校申请截止
+### (2) 暑期学校申请截止
 
-### 紧急: 14天内截止
+**请注意：** 以下学校中，前几项的申请截止日期已过。考虑到课程即将或已经举办，建议有志者直接访问其官网确认是否仍有空余名额或候补名单，特别是Les Houches等学校可能会因退补而释放位置。
 
-- **[LES HOUCHES – WE Heraeus Summer School: Frontiers of Condensed Matter 2026](https://frontiers-les-houches.org/)**
-    - **地点**: 法国，莱苏什
-    - **课程日期**: 2026年9月28日 - 10月9日
-    - **申请截止**: **2026年6月15日** (已过，可尝试联系确认是否还有名额)
-    - **推荐理由**: 莱苏什物理学校与WE Heraeus基金会联合举办，凝聚态物理前沿的高端博士生学校，含金量极高。
-    - **主题**: 凝聚态物质, 量子材料
+**申请可能已截止，但课程仍在近期**
 
-- **[MLSS 2026 Tübingen](https://mlss2026.is.tuebingen.mpg.de/)** (50th Machine Learning Summer School)
-    - **地点**: 德国，图宾根
-    - **课程日期**: 2026年8月31日 - 9月11日
-    - **申请截止**: **2026年7月31日** (紧急! 约6周内截止，名额有限)
-    - **推荐理由**: 最具传奇色彩的机器学习暑期学校系列第50届，由图宾根马普所举办，大师云集，极受认可。
-    - **主题**: 机器学习 (ML), 人工智能 (AI)
+*   **(可再确认) MLSS 2026 图宾根 (第50届机器学习暑期学校)**
+    *   地点：德国图宾根
+    *   课程日期：2026年8月31日 - 9月11日
+    *   **申请截止：2026-07-31** (此截止日期在当前日期之后，可申请)
+    *   推荐理由：机器学习领域历史最悠久、声誉最高的暑期学校之一，由马普所主办，提供顶尖的PhD级别动手训练。**此为申请窗口期内的重点推荐。**
+    *   [学校链接](https://mlss2026.is.tuebingen.mpg.de/)
 
-### 其他暑期学校 (申请截止已过，但课程仍将举办)
+*   **(可再确认) 凝聚态物质前沿暑期学校 - Les Houches / WE Heraeus**
+    *   地点：法国莱苏什
+    *   课程日期：2026年9月28日 - 10月9日
+    *   **申请截止：2026-06-15** (已过)
+    *   推荐理由：在著名物理学家莱苏什举办的暑期学校，本次聚焦凝聚态和量子材料的前沿。
+    *   [学校链接](https://frontiers-les-houches.org/)
 
-以下学校的申请截止日期已过，但课程仍在近期举办。如果您非常感兴趣，建议直接发邮件给主办方询问是否还有剩余名额或候补机会。
+*   **(可再确认) 量子理论全尺度暑期学校 - Les Houches**
+    *   地点：法国莱苏什
+    *   课程日期：2026年8月3-28日
+    *   **申请截止：2026-05-15** (已过)
+    *   推荐理由：为期近一个月的深度夏季课程，聚焦量子理论的最新进展。
+    *   [学校链接](https://www.houches-school-physics.com/program/program-2026/summer-school-quantum-theory-on-all-scales-1638813.kjsp)
 
-- **[Summer School on Topology and Fractionalisation in Quantum Matter](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)**
-    - **地点**: 法国，卡尔热斯
-    - **课程日期**: 2026年8月3日 - 15日
-    - **申请截止**: 2026年4月28日 (已过)
-    - **推荐理由**: 聚焦拓扑与分数化量子物质，在风景优美的科西嘉岛举行，DFG SFB 1143联合组织。
-    - **主题**: 拓扑物理, 量子物质
+*   **(可再确认) 纳米限域中的非平衡物理 - CECAM莱苏什学校**
+    *   地点：法国莱苏什
+    *   课程日期：2026年9月14-25日
+    *   **申请截止：2026-04-30** (已过)
+    *   推荐理由：由CECAM组织，深入探讨非平衡统计物理与纳米科学的交叉领域。
+    *   [学校链接](https://www.fluxionic.org/events/les-houches-2026)
 
-- **[CECAM-Les Houches School: Nonequilibrium Physics in Nanoconfinement](https://www.fluxionic.org/events/les-houches-2026)**
-    - **地点**: 法国，莱苏什
-    - **课程日期**: 2026年9月14日 - 25日
-    - **申请截止**: 2026年4月30日 (已过)
-    - **推荐理由**: CECAM与莱苏什物理学校联合举办，专注纳米限域中的非平衡物理，顶尖导师阵容。
-    - **主题**: 非平衡物理, 纳米物理
+*   **(可再确认) 量子物质中的拓扑与分数化 - Cargèse**
+    *   地点：法国卡热斯
+    *   课程日期：2026年8月3-15日
+    *   **申请截止：2026-04-28** (已过)
+    *   推荐理由：在天文学暑期学校地点举行，专注于拓扑量子物质这一前沿热点。
+    *   [学校链接](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
 
-- **[ICTP Summer School 2026](https://www.ictp.it/)** (Condensed Matter and Statistical Physics)
-    - **地点**: 意大利，的里雅斯特
-    - **课程日期**: 2026年7月 (具体日期待定)
-    - **申请截止**: 2026年5月1日 (已过，ICTP部分项目可能有滚动或第二期申请)
-    - **推荐理由**: ICTP的经典暑期班，对发展中国家学生友好(通常提供资助)，凝聚态与统计物理的基石课程。
-    - **主题**: 凝聚态物质, 统计物理
+*   **(可再确认) 关联材料 - Jülich秋季学校**
+    *   地点：德国于利希研究中心
+    *   课程日期：2026年9月21-25日
+    *   **申请截止：2026-05-31** (已过)
+    *   推荐理由：专注于强关联电子体系的经典暑期学校，方法与应用并重。
+    *   [学校链接](https://www.cond-mat.de/events/correl26/)
 
-- **[Les Houches Summer School: Quantum Theory On All Scales](https://www.houches-school-physics.com/program/program-2026/summer-school-quantum-theory-on-all-scales-1638813.kjsp)**
-    - **地点**: 法国，莱苏什
-    - **课程日期**: 2026年8月3日 - 28日
-    - **申请截止**: 2026年5月15日 (已过，可询问候补)
-    - **推荐理由**: 莱苏什经典长周期学校，探讨从微观到宇观的量子理论，内容深度大。
-    - **主题**: 量子理论, 数学物理
-
-- **[Correl26: Autumn School on Correlated Electrons](https://www.cond-mat.de/events/correl26/)** (Autumn School on Correlated Electrons: Correlated Materials — Methods and Applications)
-    - **地点**: 德国，于利希
-    - **课程日期**: 2026年9月21日 - 25日
-    - **申请截止**: 2026年5月31日 (已过，可问候补)
-    - **推荐理由**: 于利希研究中心主办的经典系列学校，强关联电子体系的专题高阶课程，适合博士生。
-    - **主题**: 关联电子, 多体物理
-
-- **[Summer School on New Frontiers in Ultrafast Quantum Optics](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)**
-    - **地点**: 意大利，科莫
-    - **课程日期**: 2026年7月27日 - 31日
-    - **申请截止**: 2026年5月31日 (已过，可问候补)
-    - **推荐理由**: 在美丽的科莫湖旁举办，聚焦超快量子光学前沿，DFG SFB 1143组织，导师资源优质。
-    - **主题**: 超快光学, 量子光学
+*   **(可再确认) 超快量子光学新前沿 - Como**
+    *   地点：意大利科莫
+    *   课程日期：2026年7月27-31日
+    *   **申请截止：2026-05-31** (已过)
+    *   推荐理由：在风景优美的科莫湖畔举行，聚焦超快光学与量子光学的前沿。
+    *   [学校链接](https://tu-dresden.de/mn/physik/sfb1143/graduiertenkolleg/schulen?set_language=en)
