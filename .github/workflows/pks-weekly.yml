@@ -33,7 +33,13 @@ jobs:
           python main.py --task pks-weekly --send_email \
             --api_key "${API_KEY}" \
             --base_url "${BASE_URL:-https://api.deepseek.com}" \
-            --model "${MODEL:-deepseek-v4-flash}"
+            --model "${MODEL:-deepseek-v4-flash}" | tee digest.log
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            grep -q "Email sent to" digest.log || {
+              echo "::error::Scheduled PKS digest did not send email."
+              exit 1
+            }
+          fi
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

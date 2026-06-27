@@ -80,6 +80,7 @@ def run_pks_weekly(api_key, base_url, model, send_email: bool):
 
     if not events:
         print("No PKS events found for the target week.")
+        print("RESULT: skipped_no_events")
         return False
 
     raw = format_events_for_llm(events, week_start)
@@ -111,6 +112,9 @@ def run_pks_weekly(api_key, base_url, model, send_email: bool):
                 "repo_url": REPO_URL,
             },
         )
+        print("RESULT: sent")
+    else:
+        print("RESULT: skipped_no_smtp")
     return True
 
 
@@ -118,12 +122,14 @@ def run_conferences_monthly(api_key, base_url, model, send_email: bool, force: b
     today = datetime.date.today()
     if not force and not is_last_sunday_of_month(today):
         print(f"Today ({today}) is not the last Sunday of the month; skipping.")
+        print("RESULT: skipped_not_last_sunday")
         return False
 
     horizon = 60
     events = fetch_upcoming_conferences(horizon_days=horizon, reference=today)
     if not events:
         print("No upcoming conference deadlines found.")
+        print("RESULT: skipped_no_events")
         return False
 
     raw = format_conferences_for_llm(events, today, horizon)
@@ -156,6 +162,9 @@ def run_conferences_monthly(api_key, base_url, model, send_email: bool, force: b
                 "repo_url": REPO_URL,
             },
         )
+        print("RESULT: sent")
+    else:
+        print("RESULT: skipped_no_smtp")
     return True
 
 

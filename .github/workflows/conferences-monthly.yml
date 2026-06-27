@@ -2,8 +2,8 @@ name: Conference Deadlines Monthly
 
 on:
   schedule:
-    # 每月最后一个周日 UTC 07:30（仅 22–31 日的周日触发，脚本内再校验）
-    - cron: '30 7 22-31 * 0'
+    # 每月最后一个周日 UTC 07:30（脚本内校验 is_last_sunday）
+    - cron: '30 7 * * 0'
   workflow_dispatch:
     inputs:
       force:
@@ -43,7 +43,13 @@ jobs:
           python main.py --task conferences-monthly --send_email $FORCE_FLAG \
             --api_key "${API_KEY}" \
             --base_url "${BASE_URL:-https://api.deepseek.com}" \
-            --model "${MODEL:-deepseek-v4-flash}"
+            --model "${MODEL:-deepseek-v4-flash}" | tee digest.log
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            grep -q "Email sent to" digest.log || grep -q "RESULT: skipped_not_last_sunday" digest.log || {
+              echo "::error::Scheduled conference digest did not send email."
+              exit 1
+            }
+          fi
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
